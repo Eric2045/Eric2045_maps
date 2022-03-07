@@ -64,6 +64,7 @@ public class EarthquakeCityMap extends PApplet {
 		}
 		else {
 			map = new UnfoldingMap(this, 200, 50, 1050, 1000, new Google.GoogleMapProvider());
+			// map = new UnfoldingMap(this, 200, 50, 1050, 1000, new EsriProvider.WorldStreetMap());
 		}
 		
 		MapUtils.createDefaultEventDispatcher(this, map);			
