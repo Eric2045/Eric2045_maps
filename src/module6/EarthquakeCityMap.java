@@ -27,10 +27,10 @@ public class EarthquakeCityMap extends PApplet {
 
 	private static final long serialVersionUID = 1L;
 
-	// FOR WORKING OFFILINE, change the value of this variable to true
+	
 	private static final boolean offline = false;
 	
-	/** This is where to find the local tiles, for working without an Internet connection */
+	
 	public static String mbTilesString = "blankLight-1-3.mbtiles";
 		
 	//feed with magnitude 2.5+ Earthquakes
@@ -94,12 +94,11 @@ public class EarthquakeCityMap extends PApplet {
 		  }
 	    }
 
-	    // could be used for debugging
+	    // used for debugging
 	    printQuakes();
 	 		
 	    // Add markers to map
-	    // NOTE: Country markers are not added to the map.  They are used
-	    //       for their geometric properties
+	    // Country markers are used for their geometric properties 
 	    map.addMarkers(quakeMarkers);
 	    map.addMarkers(cityMarkers);
 	    
